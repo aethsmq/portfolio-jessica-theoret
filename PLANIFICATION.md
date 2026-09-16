@@ -12,3 +12,13 @@
   **Déclencheur :**
 - Survol : Boîte d'un des projets agrandit au survol
 - Clic : effet de clic sur les boutons
+
+## Où vivent mes projets
+
+## Quoi animer, comment, sur quoi?
+
+## Une page, ou plusieurs?
+
+## Où ça vit en ligne?
+
+github pages
