@@ -1,4 +1,4 @@
-<img width="1440" height="3224" alt="Project page for portfolio" src="https://github.com/user-attachments/assets/14139e30-01eb-4979-a646-660d02d90102" />
+
 **Quel type de poste ou de stage je vise en sortant du programme?**
 
 Un poste en design, animation 2D/3D ou video.
@@ -31,4 +31,4 @@ Quelque chose dans le style maximaliste, créatif et coloré.
 **prompt:** Créez-moi une page de portfolio et concevez également une page de projets pour présenter mes différentes réalisations ; je souhaite un style maximaliste inspiré d'iOS (Apple) et une esthétique de type « décollage » (façon collage) rappelant le début de mon portfolio, tout en utilisant des couleurs vives comme celles de ma maquette actuelle. <br>
 **outils:** figma make <br>
 **résultats:**
-<img width="1440" height="3224" alt="Project page for portfolio" src="https://github.com/user-attachments/assets/caabfacc-25bc-48bb-9bf5-d08a660df74b" />
+<img width="2000" height="1000" alt="Project page for portfolio" src="https://github.com/user-attachments/assets/caabfacc-25bc-48bb-9bf5-d08a660df74b" />
