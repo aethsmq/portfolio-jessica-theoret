@@ -1,3 +1,4 @@
+
 **Quel type de poste ou de stage je vise en sortant du programme?**
 
 Un poste en design, animation 2D/3D ou video.
@@ -36,3 +37,5 @@ J'ai utilisé l'IA pour me générer des idées visuelles. Ça m'a bien pas vrai
 **prompt:** Créez-moi une page de portfolio et concevez également une page de projets pour présenter mes différentes réalisations ; je souhaite un style maximaliste inspiré d'iOS (Apple) et une esthétique de type « décollage » (façon collage) rappelant le début de mon portfolio, tout en utilisant des couleurs vives comme celles de ma maquette actuelle. <br>
 **outils:** figma make <br>
 **résultats:**
+<img width="1440" height="3224" alt="Project page for portfolio" src="https://github.com/user-attachments/assets/72307373-8ca0-463b-b298-61463db2f1bf" />
+
