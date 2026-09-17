@@ -1,4 +1,5 @@
 Nom: Jessica Théorêt <br>
+College: College Montmorency <br>
 Programme d'étude: Technique d'intégration multimédia <br>
 Courriel: 2396043@cmontmorency.qc.ca <br>
 Lien portfolio: <br>

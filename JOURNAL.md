@@ -8,21 +8,27 @@ Une équipe à la recherche d'un profil polyvalent et passionné.Quelqu'un qui a
 
 **Qu'est-ce que cette personne cherche à voir en premier ?**
 
-Fgchvjbknlm
+mon originalite, mon style esthetique, etc.
 
 **Quel style visuel (couleurs, typographie, ambiance générale) représenterait le mieux l'identité professionnelle que je veux projeter ?**
 
 Quelque chose dans le style maximaliste, créatif et coloré.
 
 **Quelle impression je veux que cette personne retienne après avoir visité mon site?**
+Que je suis une personne créatiive, amusante et passionée.
 
 ## 5 questions - bloc 1
 
-1. Qu’est-ce que j’ai accompli depuis le dernier bloc ? J'ai commencé mon moodboard.
-2. Quelle a été ma principale difficulté et comment je l’ai surmontée ? Trouver le style que je veux aborder.
-3. Qu’est-ce que j’ai appris que je ne savais pas avant ? Comment utiliser l'IA pour générer des directions visuelles.
-4. Quelle est ma prochaine étape concrète ? Commencer ma maquette pour mon projet.
-5. Est-ce que j’ai utilisé l’IA ? Si oui, pour quoi et qu’est-ce que ça m’a appris ? J'ai utilisé l'IA pour me générer des directions visuelles. Ça m'a bien aidé à visualiser ce que je veux faire.
+**1. Qu’est-ce que j’ai accompli depuis le dernier bloc ?** J'ai commencé mon moodboard et commencé à chosir mes projets que je voulais mettre dans mon portfolio.
+
+**2. Quelle a été ma principale difficulté et comment je l’ai surmontée ?** Trouver de bonnes inspirations par mon ésthetique choisi et exécuter mon côté projets design.
+
+**3. Qu’est-ce que j’ai appris que je ne savais pas avant ? Comment utiliser l'IA pour générer des directions visuelles.**
+qu'il faut vraiment être specifique quand tu fais ton prompt, la majorité du temps, la IA ne va pas te donner des bonnes idée.
+**4. Quelle est ma prochaine étape concrète ? Commencer ma maquette pour mon projet.**
+
+**5. Est-ce que j’ai utilisé l’IA ? Si oui, pour quoi et qu’est-ce que ça m’a appris ?**
+J'ai utilisé l'IA pour me générer des idées visuelles. Ça m'a bien pas vraiment aidée à visualiser ce que je voulais faire ésthetiquement.
 
 ## utilisation de ai
 

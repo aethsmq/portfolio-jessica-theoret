@@ -4,11 +4,13 @@
 
 - Page introduction
 - Les titres et textes
-- Le curseur
+- page projets
+
   **Type d'animation :**
-- Scroll animation (pour les images par rapport aux projets)
-- Animation de flotte, rebondissement au contact
-- Apparition et disparition des formes colorées / animation générative
+
+- Scroll animation
+- Animation d'agrandissement au hover de mes projets
+- animation de pop up pour mes fenêtres
   **Déclencheur :**
 - Survol : Boîte d'un des projets agrandit au survol
 - Clic : effet de clic sur les boutons
@@ -18,6 +20,8 @@
 ## Quoi animer, comment, sur quoi?
 
 ## Une page, ou plusieurs?
+
+plusieurs, une page pour chaque de mes projets
 
 ## Où ça vit en ligne?
 
