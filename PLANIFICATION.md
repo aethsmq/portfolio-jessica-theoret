@@ -17,7 +17,11 @@
 
 ## Où vivent mes projets
 
+JSON: c'est le plus simple
+
 ## Quoi animer, comment, sur quoi?
+
+CSS et anime.js : c'est le plus simple
 
 ## Une page, ou plusieurs?
 
