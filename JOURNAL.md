@@ -1,4 +1,3 @@
-
 **Quel type de poste ou de stage je vise en sortant du programme?**
 
 Un poste en design, animation 2D/3D ou video.
@@ -27,6 +26,7 @@ Que je suis une personne créatiive, amusante et passionée.
 **3. Qu’est-ce que j’ai appris que je ne savais pas avant ? Comment utiliser l'IA pour générer des directions visuelles.**
 qu'il faut vraiment être specifique quand tu fais ton prompt, la majorité du temps, la IA ne va pas te donner des bonnes idée.
 **4. Quelle est ma prochaine étape concrète ? Commencer ma maquette pour mon projet.**
+continuer à chercher des inspiration et finir mon design
 
 **5. Est-ce que j’ai utilisé l’IA ? Si oui, pour quoi et qu’est-ce que ça m’a appris ?**
 J'ai utilisé l'IA pour me générer des idées visuelles. Ça m'a bien pas vraiment aidée à visualiser ce que je voulais faire ésthetiquement.
@@ -38,4 +38,3 @@ J'ai utilisé l'IA pour me générer des idées visuelles. Ça m'a bien pas vrai
 **outils:** figma make <br>
 **résultats:**
 <img width="1440" height="3224" alt="Project page for portfolio" src="https://github.com/user-attachments/assets/72307373-8ca0-463b-b298-61463db2f1bf" />
-

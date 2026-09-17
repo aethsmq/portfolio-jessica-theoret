@@ -4,7 +4,7 @@
 
 - Page introduction
 - Les titres et textes
-- page projets
+- section projets
 
   **Type d'animation :**
 
