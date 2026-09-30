@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Bootzy TM";
+  src: url("../assets/BootzyTM.ttf") format("truetype");
+  font-display: swap;
+}
+
+:root {
+  --ink: #080808;
+  --paper: #f3f1ee;
+  --white: #ffffff;
+  --pink: #df4e9f;
+  --blue: #2186ca;
+  --line: #141414;
+  --display: "Bootzy TM", Impact, sans-serif;
+  --body: Calibri, "Trebuchet MS", sans-serif;
+}

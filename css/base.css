@@ -1,0 +1,358 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--ink);
+  font-family: var(--body);
+}
+
+.noise {
+  position: fixed;
+  z-index: 100;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.14;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.42'/%3E%3C/svg%3E");
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  background: transparent;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 38px;
+  background: rgba(235, 235, 233, 0.78);
+  border-radius: 0 0 12px 12px;
+  backdrop-filter: blur(8px);
+}
+
+.logo,
+.navbar a {
+  font-family: var(--display);
+  font-size: 125%;
+}
+
+.navbar nav {
+  display: flex;
+  gap: clamp(2rem, 6vw, 5.5rem);
+  padding-right: 8%;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.window {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.window-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 28px;
+  padding: 0 10px;
+  background: #f4f4f4;
+  border-bottom: 1px solid #bbb;
+  font-size: 62.5%;
+}
+
+.dot {
+  width: 2%;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.dot.red {
+  background: #f22;
+}
+.dot.yellow {
+  background: #f2c400;
+}
+.dot.green {
+  background: #1eaa59;
+}
+
+.hero {
+  position: relative;
+  min-height: min(56.25vw, 720px);
+  overflow: hidden;
+  background: #656966 url("../assets/image/japan tokyo.jpe") center 42% / cover no-repeat;
+}
+
+.hero::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  opacity: 0.1;
+  background-image:
+    linear-gradient(90deg, transparent 48%, #18201c 49% 51%, transparent 52%), linear-gradient(0deg, transparent 48%, #18201c 49% 51%, transparent 52%);
+  background-size: 66px 66px;
+  transform: skewY(-5deg) scale(1.2);
+}
+
+.hero > * {
+  z-index: 1;
+}
+
+.hero h1 {
+  position: absolute;
+  z-index: 4;
+  top: 45%;
+  left: 50%;
+  margin: 0;
+  font-family: var(--display);
+  font-size: 500%;
+  line-height: 0.9;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  text-shadow: 2px 3px 0 #fff;
+}
+
+.airdrop {
+  top: 13%;
+  left: 4%;
+  z-index: 5;
+  width: 27%;
+  background: var(--white);
+}
+
+.window-title {
+  display: grid;
+  place-items: center;
+  height: 48px;
+  font-weight: 600;
+}
+
+.airdrop-content {
+  position: relative;
+  height: 230px;
+  overflow: hidden;
+}
+
+.airdrop-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 38%;
+  transform: scale(1.55);
+}
+
+.face-box {
+  position: absolute;
+  top: 22%;
+  left: 25%;
+  width: 48%;
+  height: 48%;
+  border: 1px solid #ffed3d;
+}
+
+.airdrop-buttons,
+.rename-buttons {
+  display: flex;
+  background: #f7f7f7;
+  border-top: 1px solid #d4d4d4;
+}
+
+.airdrop-buttons button,
+.rename-buttons button {
+  width: 50%;
+  padding: 9px 4px;
+  color: var(--blue);
+  font-size: 75%;
+  cursor: pointer;
+}
+
+.airdrop-buttons button + button,
+.rename-buttons button + button {
+  border-left: 1px solid #ccc;
+}
+
+.camera {
+  top: 19%;
+  left: 28%;
+  z-index: 2;
+  width: 45%;
+  height: 47%;
+  background: #fff;
+}
+
+.camera-content {
+  height: calc(100% - 70px);
+  background: #fff;
+}
+
+.captcha {
+  position: absolute;
+  top: 21%;
+  right: 7%;
+  width: 38%;
+  max-width: none;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.captcha::first-letter {
+  color: #21a568;
+}
+
+.camera-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 42px;
+  padding: 0 12%;
+  background: #eee;
+  font-size: 62.5%;
+}
+
+.camera-controls button {
+  color: #f00;
+  font-size: 187.5%;
+}
+
+.rename {
+  top: 50%;
+  right: 8%;
+  z-index: 6;
+  width: 24%;
+  background: linear-gradient(#f5f4f1, #dfdcd7);
+}
+
+.rename h3 {
+  margin: 13px 0 9px;
+  text-align: center;
+  font-size: 87.5%;
+}
+
+.rename input {
+  display: block;
+  width: 95%;
+  margin: 0 10px 12px;
+  padding: 5px 7px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  background: #fff;
+  font-size: 75%;
+}
+
+.flower,
+.star,
+.sparkle {
+  position: absolute;
+  z-index: 7;
+  font-size: 400%;
+  line-height: 1;
+}
+
+.flower {
+  top: 64%;
+  left: 22%;
+  color: #f2a6db;
+  text-shadow:
+    1px 1px 0 #000,
+    -1px -1px 0 #000;
+}
+
+.star-one {
+  top: 19%;
+  right: 22%;
+  color: #fff55c;
+  text-shadow:
+    2px 2px #000,
+    -1px -1px #000;
+  transform: rotate(-15deg);
+}
+
+.airdrop {
+  top: 12.5%;
+  left: 3.8%;
+  width: 26.4%;
+  background: transparent;
+  box-shadow: none;
+}
+
+.airdrop > img:first-child,
+.camera > img:first-child,
+.rename > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.camera {
+  top: 17.5%;
+  left: 28.2%;
+  width: 45%;
+  height: auto;
+  background: transparent;
+  box-shadow: none;
+}
+
+.captcha {
+  top: 18%;
+  right: -14%;
+  width: 35%;
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+}
+
+.rename {
+  top: 50.5%;
+  right: 8.3%;
+  background: transparent;
+  box-shadow: none;
+}
+
+.flower,
+.star {
+  font-size: 0;
+}
+
+.flower {
+  width: 9%;
+}
+
+.star-one,
+.star-two {
+  width: 10%;
+}

@@ -6,15 +6,13 @@
 
     <title>Jess — Portfolio</title>
 
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
   </head>
 
   <body>
+    <div class="noise" aria-hidden="true"></div>
     <!-- ================= NAVIGATION ================= -->
 
     <header class="navbar">
@@ -33,60 +31,26 @@
 
       <!-- AirDrop window -->
       <div class="window airdrop">
-        <div class="window-title">
-          <span>AirDrop</span>
-        </div>
-
-        <div class="airdrop-content">
-          <img src="images/profile.jpg" alt="Photo de Jess" />
-
-          <div class="face-box"></div>
-        </div>
-
-        <div class="airdrop-buttons">
-          <button>Decline</button>
-          <button>Accept</button>
-        </div>
+        <img src="assets/image/Group 6.png" alt="AirDrop de la photo de Jess" />
+        <div class="face-box" aria-hidden="true"></div>
       </div>
 
       <!-- Camera window -->
       <div class="window camera">
-        <div class="window-bar">
-          <span class="dot red"></span>
-          <span class="dot yellow"></span>
-          <span class="dot green"></span>
-
-          <span class="window-name">hoto Booth</span>
-        </div>
-
-        <div class="camera-content">
-          <div class="captcha">✓ &nbsp; I'm not a robot</div>
-        </div>
-
-        <div class="camera-controls">
-          <button>◉</button>
-
-          <span>Effects</span>
-        </div>
+        <img src="assets/image/download (1) 1.png" alt="Fenêtre Photo Booth" />
+        <img class="captcha" src="assets/image/imnotarobot.png" alt="Je ne suis pas un robot" />
       </div>
 
       <!-- Rename album window -->
       <div class="window rename">
-        <h3>Rename Album</h3>
-
-        <input type="text" value="mon portfolio.." />
-
-        <div class="rename-buttons">
-          <button>Cancel</button>
-          <button>Save</button>
-        </div>
+        <img src="assets/image/Group 1.png" alt="Renommer l'album" />
       </div>
 
       <!-- Decorative elements -->
 
-      <div class="flower">✿</div>
+      <img class="flower" src="assets/icone/extra - flower 1.png" alt="" />
 
-      <div class="star star-one">★</div>
+      <img class="star star-one" src="assets/icone/itunes 1.png" alt="" />
 
       <h1>PORTFOLIO</h1>
     </section>
@@ -103,6 +67,7 @@
       </div>
 
       <!-- About window -->
+
       <div class="about-window">
         <div class="window-bar">
           <span class="dot red"></span>
@@ -146,7 +111,7 @@
           <!-- Photo -->
 
           <div class="photo-container">
-            <img src="images/profile.jpg" alt="Jess" />
+            <img src="assets/image/Image (3).jpe" alt="Jess" />
           </div>
         </div>
       </div>
@@ -198,7 +163,7 @@
         </div>
       </div>
 
-      <div class="star star-two">★</div>
+      <img class="star star-two" src="assets/icone/itunes 1.png" alt="" />
       <div class="sparkle">✧</div>
     </section>
 
