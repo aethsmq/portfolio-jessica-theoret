@@ -1,16 +1,41 @@
 @font-face {
   font-family: "Bootzy TM";
-  src: url("../assets/BootzyTM.ttf") format("truetype");
+  src: url("../assets/fonts/BootzyTM.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BrushSci";
+  src: url("../assets/fonts/BRUSHSCI.TTF") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fairfax Italic";
+  src: url("../assets/fonts/FairfaxItalic.ttf") format("truetype");
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LoRes9 Narrow";
+  src: url("../assets/fonts/LoRes9OTNarrow-Bold.ttf") format("truetype");
+  font-weight: 700;
   font-display: swap;
 }
 
 :root {
   --ink: #080808;
-  --paper: #f3f1ee;
+  --paper: #ffffff;
   --white: #ffffff;
-  --pink: #df4e9f;
-  --blue: #2186ca;
+  --pink: #f36bc6;
+  --pink-dark: #e84cb7;
+  --blue: #086df2;
+  --green: #c5ef86;
   --line: #141414;
   --display: "Bootzy TM", Impact, sans-serif;
+  --pixel: "LoRes9 Narrow", "Bootzy TM", Impact, sans-serif;
+  --editorial: "Fairfax Italic", Georgia, serif;
+  --expressive: "BrushSci", "Arial Black", sans-serif;
   --body: Calibri, "Trebuchet MS", sans-serif;
 }

@@ -1,178 +1,114 @@
 <!doctype html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Jess — Portfolio</title>
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio de Jessica Theoret, designer graphique et créative numérique." />
+    <title>Jessica Theoret | Portfolio</title>
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/layout.css" />
   </head>
-
-  <body>
-    <div class="noise" aria-hidden="true"></div>
-    <!-- ================= NAVIGATION ================= -->
-
-    <header class="navbar">
-      <div class="logo">JESS</div>
-
-      <nav>
+  <body id="top">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Retour à l'accueil">
+        <span>JESS</span>
+        <img src="assets/image/logo webb.png" alt="Illustration de visage" />
+      </a>
+      <nav class="main-nav" aria-label="Navigation principale">
         <a href="#about">à propos</a>
         <a href="#projects">projets</a>
       </nav>
     </header>
 
-    <!-- ================= HERO ================= -->
-
-    <section class="hero">
-      <div class="background-image"></div>
-
-      <!-- AirDrop window -->
-      <div class="window airdrop">
-        <img src="assets/image/Group 6.png" alt="AirDrop de la photo de Jess" />
-        <div class="face-box" aria-hidden="true"></div>
-      </div>
-
-      <!-- Camera window -->
-      <div class="window camera">
-        <img src="assets/image/download (1) 1.png" alt="Fenêtre Photo Booth" />
-        <img class="captcha" src="assets/image/imnotarobot.png" alt="Je ne suis pas un robot" />
-      </div>
-
-      <!-- Rename album window -->
-      <div class="window rename">
-        <img src="assets/image/Group 1.png" alt="Renommer l'album" />
-      </div>
-
-      <!-- Decorative elements -->
-
-      <img class="flower" src="assets/icone/extra - flower 1.png" alt="" />
-
-      <img class="star star-one" src="assets/icone/itunes 1.png" alt="" />
-
-      <h1>PORTFOLIO</h1>
-    </section>
-
-    <!-- ================= ABOUT ================= -->
-
-    <section id="about" class="about">
-      <!-- Pixel decoration -->
-      <div class="pixel-decoration">
-        ░░░░░░░░<br />
-        ░░░░░░░░░<br />
-        ░░░░░░░░░░<br />
-        ░░░░░░░░
-      </div>
-
-      <!-- About window -->
-
-      <div class="about-window">
-        <div class="window-bar">
-          <span class="dot red"></span>
-          <span class="dot yellow"></span>
-          <span class="dot green"></span>
-
-          <span class="browser-title"> www.facebook.com </span>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="window window--hero">
+          <span class="window-control" aria-hidden="true">×</span>
+          <span class="window-control window-control--right" aria-hidden="true">×</span>
+          <p class="year">2026</p>
+          <h1 id="hero-title"><img src="assets/image/PORFOLIO.png" alt="Portfolio" /></h1>
+          <p class="hero-name">Jessica Theoret</p>
+          <span class="window-control window-control--bottom" aria-hidden="true">×</span>
+          <span class="window-control window-control--bottom window-control--right" aria-hidden="true">×</span>
         </div>
+      </section>
 
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div class="about-backdrop"></div>
+        <div class="about-title-wrap">
+          <h2 id="about-title"><img src="assets/image/apropos.png" alt="À propos de moi" /></h2>
+        </div>
         <div class="about-content">
-          <div class="about-text">
-            <h2>ABOUT ME</h2>
-
-            <p>Bonjour! Je suis Jess, une étudiante en multimédia qui aime créer, dessiner et expérimenter avec différents médiums numériques.</p>
-
-            <hr />
-
-            <!-- Contact -->
-
-            <div class="contact">
-              <p>✉️ heyjessi2005@gmail.com</p>
-              <p>☎️ +1 438 922 2005</p>
-            </div>
-
-            <!-- Information -->
-
-            <div class="info">
+          <figure class="portrait-frame">
+            <img src="assets/image/Image (3).jpe" alt="Jessica portant des lunettes" />
+            <img class="flower" src="assets/icone/extra - flower 1.png" alt="" />
+          </figure>
+          <article class="about-card">
+            <h3>Salut!</h3>
+            <p>Je suis Jessica, une créative curieuse qui aime donner vie aux idées grâce au design, à l'image et aux expériences numériques.</p>
+            <div class="facts">
               <div>
-                <h3>Education</h3>
-                <p>Collège Montmorency</p>
-                <p>2023 — 2027</p>
+                <h4>Éducation</h4>
+                <p>Collège Montmorency<br />2023, 2027</p>
               </div>
-
               <div>
-                <h3>Language</h3>
+                <h4>Language</h4>
                 <p>français &nbsp;&nbsp; anglais</p>
               </div>
             </div>
-          </div>
-
-          <!-- Photo -->
-
-          <div class="photo-container">
-            <img src="assets/image/Image (3).jpe" alt="Jess" />
-          </div>
+            <div class="tools" aria-label="Logiciels utilisés">
+              <img src="assets/icone/photoshop.png" alt="Photoshop" />
+              <img src="assets/icone/After Effect.png" alt="After Effects" />
+              <img src="assets/icone/Illustrator icon.png" alt="Illustrator" />
+              <img src="assets/icone/Figma.png" alt="Figma" />
+              <img src="assets/icone/davinci.png" alt="DaVinci Resolve" />
+              <img src="assets/icone/maya.png" alt="Maya" />
+            </div>
+          </article>
         </div>
+      </section>
+
+      <section class="projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="projects-main">
+          <h2 class="projects-title" id="projects-title">PROJETS</h2>
+          <div class="project-grid" aria-label="Galerie de projets">
+            <a class="project-tile" href="#contact"><img src="assets/image/video2.png" alt="Projet vidéo avec une télévision et des chaussures" /></a>
+            <a class="project-tile" href="#contact"><img src="assets/image/video1.png" alt="Projet vidéo en gros plan" /></a>
+            <a class="project-tile" href="#contact"><img src="assets/image/Picture2.jpg" alt="Illustration d'un personnage aux couleurs bleues et vertes" /></a>
+            <a class="project-tile" href="#contact"><img src="assets/image/animation3d.png" alt="Animation 3D de personnages flottants sous l'eau" /></a>
+            <a class="project-tile" href="#contact"><img src="assets/image/logo color ver.png" alt="Projet d'identité visuelle animé" /></a>
+          </div>
+
+          <section class="contact-card" id="contact" aria-labelledby="contact-title">
+            <div class="contact-card__heading"><span id="contact-title">Contactez</span> Moi</div>
+            <div class="contact-card__body">
+              <div class="contact-card__portrait">
+                <img src="assets/image/logo webb.png" alt="Illustration de visage" />
+              </div>
+              <div class="contact-card__details">
+                <small>IDENTIFICATION CARD<br />NO.20051221000200</small>
+                <p>✉ heyjessi2005@gmail.com</p>
+                <p>✆ +1 438 922 2005</p>
+                <p>Montréal, Québec</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <h2>MERCI POUR VOTRE CURIOSITÉ</h2>
+      <nav aria-label="Navigation du pied de page">
+        <a href="#projects">projets</a>
+        <a href="#about">à propos</a>
+        <a href="#top">accueil</a>
+      </nav>
+      <div class="footer-mark" aria-label="JESS">
+        <span>JESS</span>
+        <img src="assets/image/logo webb.png" alt="Illustration de visage" />
       </div>
-
-      <!-- ================= SOFTWARE WINDOW ================= -->
-
-      <div class="software-window">
-        <div class="window-bar">
-          <span class="dot red"></span>
-          <span class="dot yellow"></span>
-          <span class="dot green"></span>
-
-          <span>New tab</span>
-        </div>
-
-        <div class="software-content">
-          <h2>softwares</h2>
-
-          <div class="software-icons">
-            <div class="software photoshop">Ps</div>
-            <div class="software after-effects">Ae</div>
-            <div class="software illustrator">Ai</div>
-            <div class="software figma">F</div>
-            <div class="software resolve">D</div>
-            <div class="software maya">M</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ================= INTERESTS ================= -->
-
-      <div class="interests-window">
-        <div class="window-bar">
-          <span class="dot red"></span>
-          <span class="dot yellow"></span>
-          <span class="dot green"></span>
-        </div>
-
-        <div class="interests-content">
-          <h2>interests</h2>
-
-          <div class="tags">
-            <span>drawing</span>
-            <span>dancing</span>
-            <span>gaming</span>
-            <span>drawing</span>
-            <span>drawing</span>
-          </div>
-        </div>
-      </div>
-
-      <img class="star star-two" src="assets/icone/itunes 1.png" alt="" />
-      <div class="sparkle">✧</div>
-    </section>
-
-    <!-- ================= PROJECTS ================= -->
-
-    <section id="projects" class="projects">
-      <h2>PROJECTS</h2>
-
-      <p>Mes projets multimédias</p>
-    </section>
+    </footer>
   </body>
 </html>
