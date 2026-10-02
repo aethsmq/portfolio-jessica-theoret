@@ -21,12 +21,12 @@ window.PROJECTS = [
     contact: 'Une expérience visuelle et sonore qui plonge le spectateur dans une rêverie subaquatique où l’imagination prend le dessus.'
   },
   {
-    id: 'tv-motion',
-    title: 'TV Motion',
-    cover: 'assets/image/video2.png',
+    id: 'La reflection perdue',
+    title: 'La reflection perdue',
+    cover: 'assets/image/reflectiongif.gif',
     alt: 'Projet vidéo avec une télévision et des chaussures',
-    heroImage: 'assets/image/video2.png',
-    link: 'projets.html?id=tv-motion',
+    heroImage: 'assets/image/reflectiongif.gif',
+    link: 'https://youtu.be/zXPtqvA6bJQ?si=DGBEXCj7Nhg4M2Vn',
     intro: [
       'Une séquence visuelle expérimentale qui mixe image, rythme et objets du quotidien pour créer une narration cinématographique.',
       'L’idée était de donner de la vie à un espace domestique en jouant avec les angles, les mouvements et la couleur.'
@@ -61,12 +61,12 @@ window.PROJECTS = [
     contact: 'Une illustration narrative dans laquelle le personnage devient le point central d’une atmosphère rêveuse et technique.'
   },
   {
-    id: 'close-up',
-    title: 'Close Up',
-    cover: 'assets/image/video1.png',
+    id: 'metamorphose',
+    title: 'Metamorphose',
+    cover: 'assets/image/metamorphosegif.gif',
     alt: 'Projet vidéo en gros plan',
-    heroImage: 'assets/image/video1.png',
-    link: 'projets.html?id=close-up',
+    heroImage: 'assets/image/metamorphosegif.gif',
+    link: 'https://www.youtube.com/watch?v=m1eJhb7E1Hs',
     intro: [
       'Un montage rapproché, cinétique et immersif qui fait ressortir les détails, les textures et les émotions.',
       'Le projet met l’accent sur l’intimité visuelle et sur le rythme de la coupe pour construire une expérience plus intense.'
