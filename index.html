@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/layout.css" />
   </head>
-  <body id="top">
+  <body id="top" data-page="home">
     <header class="site-header">
       <div class="brand-group">
         <a class="brand" href="index.html" aria-label="Retour à l'accueil">
@@ -76,13 +76,7 @@
       <section class="projects-section" id="projects" aria-labelledby="projects-title">
         <div class="projects-main">
           <h2 class="projects-title" id="projects-title">PROJETS</h2>
-          <div class="project-grid" aria-label="Galerie de projets">
-            <a class="project-tile" href="#contact"><img src="assets/image/video2.png" alt="Projet vidéo avec une télévision et des chaussures" /></a>
-            <a class="project-tile" href="#contact"><img src="assets/image/video1.png" alt="Projet vidéo en gros plan" /></a>
-            <a class="project-tile" href="#contact"><img src="assets/image/Picture2.jpg" alt="Illustration d'un personnage aux couleurs bleues et vertes" /></a>
-            <a class="project-tile" href="#contact"><img src="assets/image/animation3d.png" alt="Animation 3D de personnages flottants sous l'eau" /></a>
-            <a class="project-tile" href="#contact"><img src="assets/image/logo color ver.png" alt="Projet d'identité visuelle animé" /></a>
-          </div>
+          <div class="project-grid" id="project-grid" aria-label="Galerie de projets"></div>
 
           <section class="contact-card" id="contact" aria-labelledby="contact-title">
             <div class="contact-card__top">
@@ -116,5 +110,8 @@
         <img src="assets/image/logo cropped.png" alt="Illustration de visage" />
       </div>
     </footer>
+
+    <script src="css/js/data.js"></script>
+    <script src="css/js/website.js"></script>
   </body>
 </html>

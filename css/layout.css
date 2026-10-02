@@ -325,7 +325,7 @@
 
 .design-video {
   position: relative;
-  width: min(460px, 100%);
+  width: min(600px, 100%);
   margin: 0 auto;
   border: 3px solid var(--line);
   border-radius: 4px;
@@ -505,56 +505,124 @@
   transform: rotate(13deg);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 980px) {
   .design-intro {
     grid-template-columns: 1fr;
-    gap: 48px;
+    width: min(100% - 32px, 560px);
+    gap: 42px;
+  }
+
+  .intro-side {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .moodboard-section {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 640px) {
+  .design-header {
+    top: 14px;
+    padding: 0 12px;
+  }
+
+  .design-header .brand-group {
+    gap: 8px;
+  }
+
+  .design-brand {
+    width: 64px;
+    height: 26px;
+  }
+
+  .design-header .brand-home,
+  .design-header .header-action {
+    width: 38px;
+    height: 38px;
+  }
+
+  .design-header .brand-home img,
+  .design-header .header-action img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .design-hero {
+    padding-top: 90px;
+  }
+
+  .design-video {
+    width: min(100%, 420px);
+  }
+
+  .design-intro {
+    grid-template-columns: 1fr;
+    gap: 34px;
     max-width: 410px;
     margin-top: 58px;
   }
+
   .intro-note {
     min-height: 0;
+    padding: 30px 18px 24px;
   }
+
   .intro-side {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 14px;
-    padding-top: 0;
   }
+
   .info-card {
     min-height: 180px;
     padding: 35px 12px 15px;
   }
+
   .roles-card {
     padding-top: 28px;
   }
+
   .software-list {
     gap: 7px;
     margin-top: 27px;
   }
+
   .software-list img {
     width: 37px;
     height: 37px;
   }
+
   .roles-card ul {
     font-size: 16px;
   }
+
   .moodboard-section {
     gap: 10px;
     margin-top: 88px;
   }
+
   .moodboard-arrow {
     width: 40px;
     height: 40px;
     flex-basis: 40px;
     font-size: 28px;
   }
+
   .moodboard-frame {
     width: calc(100% - 100px);
   }
+
   .design-contact {
     width: calc(100% - 64px);
     margin-bottom: 130px;
     padding: 24px 26px;
+  }
+
+  .design-contact img {
+    left: 50%;
+    bottom: -28px;
+    transform: translateX(-50%) rotate(13deg);
   }
 }
 

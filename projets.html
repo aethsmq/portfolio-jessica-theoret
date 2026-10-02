@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/layout.css" />
   </head>
-  <body class="design-page" id="top">
+  <body class="design-page" id="top" data-page="project">
     <header class="site-header design-header">
       <div class="brand-group">
         <a class="brand design-brand" href="index.html" aria-label="Retour à l'accueil">
@@ -30,41 +30,35 @@
     <main>
       <section class="design-hero" aria-label="Projet d'animation 3D">
         <div class="design-video">
-          <img src="assets/image/animation3d.png" alt="Personnage flottant dans un univers sous-marin" />
-          <button class="play-button" type="button" aria-label="Lire la vidéo"><span></span></button>
+          <img id="project-hero-image" src="assets/image/animation3d.png" alt="Personnage flottant dans un univers sous-marin" />
+          <button id="project-play-button" class="play-button" type="button" aria-label="Lire la vidéo"><span></span></button>
           <span class="video-dot" aria-hidden="true"></span>
         </div>
       </section>
 
       <section class="design-intro" aria-label="Informations sur mes projets">
         <article class="intro-note">
-          <h1>IN MY MIND</h1>
-          <p>
-            niubvyctgx rftfcgvhjbknlibjugv yctgx rffgchvjbknbuhvycgtrfxfgchvjbknljbhvgcf hxdzxgchvjbknbhvgcfxdchjkhgvcfxgchvjbkhvgctyfrxtcgyvhyujbknbhvgcy
-            fytgvhjbkhvgctyyghvjbknbhv
-          </p>
-          <p>
-            niubvyctgx rftfcgvhjbknlibjugv yctgx rffgchvjbknbuhvycgtrfxfgchvjbknljbhvgcf hxdzxgchvjbknbhvgcfxdchjkhgvcfxgchvjbkhvgctyfrxtcgyvhyujbknbhvgcy
-            fytgvhjbkhvgctyyghvjbknbhv gwer ehthgdfsd agftrffedwads fgrthrgefdaSFEGR
-          </p>
+          <h1 id="project-title">IN MY MIND</h1>
+          <div id="project-intro-copy">
+            <p>
+              Une animation en 3D sur une petite fille dans son univers, s'enfonçant toujours plus profondément dans son imagination.
+            </p>
+            <p>
+              niubvyctgx rftfcgvhjbknlibjugv yctgx rffgchvjbknbuhvycgtrfxfgchvjbknljbhvgcf
+              fytgvhjbkhvgctyyghvjbknbhv gwer ehthgdfsd agftrffedwads fgrthrgefdaSFEGR
+            </p>
+          </div>
           <img class="folder-sticker" src="assets/icone/files 2.png" alt="" />
         </article>
 
         <div class="intro-side">
           <article class="info-card" id="software">
             <h2>LOGICIELS</h2>
-            <div class="software-list" aria-label="Logiciels utilisés">
-              <img src="assets/icone/davinci.png" alt="DaVinci Resolve" />
-              <img src="assets/icone/maya.png" alt="Maya" />
-              <img src="assets/icone/Illustrator icon.png" alt="Illustrator" />
-            </div>
+            <div id="project-software-list" class="software-list" aria-label="Logiciels utilisés"></div>
           </article>
           <article class="info-card roles-card" id="roles">
             <h2>Rôles</h2>
-            <ul>
-              <li>Animateur 3d</li>
-              <li>Monteuse video</li>
-            </ul>
+            <ul id="project-roles-list"></ul>
           </article>
         </div>
       </section>
@@ -72,18 +66,21 @@
       <section class="moodboard-section" aria-label="Moodboard du projet">
         <button class="moodboard-arrow" type="button" aria-label="Moodboard précédent">&lt;</button>
         <figure class="moodboard-frame">
-          <img src="assets/image/moodboard1.png" alt="Moodboard avec illustrations nocturnes et palette de couleurs" />
+          <img id="project-moodboard-image" src="assets/image/moodboard1.png" alt="Moodboard avec illustrations nocturnes et palette de couleurs" />
         </figure>
         <button class="moodboard-arrow" type="button" aria-label="Moodboard suivant">&gt;</button>
       </section>
 
       <section class="design-contact" id="contact" aria-label="Description du projet">
-        <p>
+        <p id="project-contact-text">
           niubvyctgx rftfcgvhjbknlibjugv yctgx rffgchvjbknbuhvycgtrfxfgchvjbknljbhvgcf hxdzxgchvjbknbhvgcfxdchjkhgvcfxgchvjbkhvgctyfrxtcgyvhyujbknbhvgcy
           fytgvhjbkhvgctyyghvjbknbhv
         </p>
         <img src="assets/icone/music 1.png" alt="" />
       </section>
     </main>
+
+    <script src="css/js/data.js"></script>
+    <script src="css/js/website.js"></script>
   </body>
 </html>
