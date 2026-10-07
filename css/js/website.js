@@ -40,6 +40,95 @@ function renderHomeProjects(projects) {
     .join('');
 }
 
+function normalizeProjectList(value) {
+  if (Array.isArray(value)) {
+    return value.filter(Boolean);
+  }
+
+  if (typeof value === 'string' && value.trim()) {
+    return [value];
+  }
+
+  return [];
+}
+
+function renderProjectMoodboard(project, moodboardImage, previousButton, nextButton) {
+  const moodboardSlides = normalizeProjectList(project.moodboard || project.moodboardImages);
+
+  if (!moodboardImage || !moodboardSlides.length) {
+    return;
+  }
+
+  let index = 0;
+
+  const updateMoodboard = () => {
+    const slide = moodboardSlides[index] || moodboardSlides[0];
+    moodboardImage.src = slide;
+    moodboardImage.alt = `${project.title} moodboard ${index + 1}`;
+  };
+
+  if (previousButton) {
+    previousButton.onclick = () => {
+      index = (index - 1 + moodboardSlides.length) % moodboardSlides.length;
+      updateMoodboard();
+    };
+  }
+
+  if (nextButton) {
+    nextButton.onclick = () => {
+      index = (index + 1) % moodboardSlides.length;
+      updateMoodboard();
+    };
+  }
+
+  updateMoodboard();
+}
+
+function renderPortraitGallery(project) {
+  const portraitGallery = document.querySelector('#portrait-gallery');
+  const portraitGalleryImage = document.querySelector('#portrait-gallery-image');
+  const portraitPrevButton = document.querySelector('#portrait-gallery [aria-label="Projet précédent"]');
+  const portraitNextButton = document.querySelector('#portrait-gallery [aria-label="Projet suivant"]');
+
+  if (!portraitGallery || !portraitGalleryImage) {
+    return;
+  }
+
+  const portraitImages = [
+    'assets/image/Image1.jpg',
+    'assets/image/Image3.jpg',
+    'assets/image/Image4.jpg',
+    'assets/image/Image5.jpg',
+    'assets/image/Image6.jpg'
+  ];
+  let portraitIndex = 0;
+
+  const updatePortraitGallery = () => {
+    portraitGalleryImage.src = portraitImages[portraitIndex] || portraitImages[0];
+    portraitGalleryImage.alt = `${project.title} projet ${portraitIndex + 1}`;
+  };
+
+  const projectKey = (project.id || '').toLowerCase();
+  const isPortraitProject = ['portrait', 'illustration'].includes(projectKey);
+  portraitGallery.hidden = !isPortraitProject;
+
+  if (portraitPrevButton) {
+    portraitPrevButton.onclick = () => {
+      portraitIndex = (portraitIndex - 1 + portraitImages.length) % portraitImages.length;
+      updatePortraitGallery();
+    };
+  }
+
+  if (portraitNextButton) {
+    portraitNextButton.onclick = () => {
+      portraitIndex = (portraitIndex + 1) % portraitImages.length;
+      updatePortraitGallery();
+    };
+  }
+
+  updatePortraitGallery();
+}
+
 function renderProjectPage(project) {
   const heroImage = document.querySelector('#project-hero-image');
   const title = document.querySelector('#project-title');
@@ -49,6 +138,9 @@ function renderProjectPage(project) {
   const moodboardImage = document.querySelector('#project-moodboard-image');
   const contactText = document.querySelector('#project-contact-text');
   const playButton = document.querySelector('#project-play-button');
+  const paletteContainer = document.querySelector('#project-palette');
+  const previousButton = document.querySelector('.moodboard-arrow[aria-label="Moodboard précédent"]');
+  const nextButton = document.querySelector('.moodboard-arrow[aria-label="Moodboard suivant"]');
 
   if (!project) {
     return;
@@ -92,10 +184,16 @@ function renderProjectPage(project) {
     rolesList.innerHTML = (project.roles || []).map((role) => `<li>${role}</li>`).join('');
   }
 
-  if (moodboardImage) {
-    moodboardImage.src = project.moodboard || project.heroImage || project.cover;
-    moodboardImage.alt = `${project.title} moodboard`;
+  if (paletteContainer) {
+    const palette = normalizeProjectList(project.palette || project.colors || project.colorPalette);
+    const swatches = palette.length ? palette : ['#171B2C', '#5E7CC6', '#A0D9DE', '#DBE7EE', '#F2D8AE'];
+    paletteContainer.innerHTML = swatches
+      .map((color) => `<span class="project-palette__swatch" style="background:${color};" aria-label="Couleur ${color}"></span>`)
+      .join('');
   }
+
+  renderProjectMoodboard(project, moodboardImage, previousButton, nextButton);
+  renderPortraitGallery(project);
 
   if (contactText) {
     contactText.textContent = project.contact || '';

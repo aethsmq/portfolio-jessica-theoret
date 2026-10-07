@@ -17,7 +17,8 @@ window.PROJECTS = [
       { name: 'Illustrator', icon: 'assets/icone/Illustrator icon.png' }
     ],
     roles: ['Animateur 3d', 'Monteuse video'],
-    moodboard: 'assets/image/moodboard1.png',
+    palette: ['#081c2b', '#6e93c5', '#76d6d1', '#d6e7ef', '#f5d7a8'],
+    moodboard: ['assets/image/moodboard1.png', 'assets/image/moodboard2.png'],
     contact: 'Une expérience visuelle et sonore qui plonge le spectateur dans une rêverie subaquatique où l’imagination prend le dessus.'
   },
   {
@@ -33,20 +34,19 @@ window.PROJECTS = [
     ],
     software: [
       { name: 'DaVinci Resolve', icon: 'assets/icone/davinci.png' },
-      { name: 'After Effects', icon: 'assets/icone/After Effect.png' },
-      { name: 'Photoshop', icon: 'assets/icone/photoshop.png' }
+      { name: 'Reaper', icon: 'assets/icone/reaper.png' },
     ],
     roles: ['Monteur vidéo', 'Motion designer'],
-    moodboard: 'assets/image/moodboard1.png',
+    palette: ['#000000', '#61090C', '#C40A11', '#d7d7d3', '#ffff'],
+    moodboard: ['assets/image/moodboard1.png', 'assets/image/moodboard2.png'],
     contact: 'Un projet de mise en scène vidéo orienté autour du mouvement, de la texture et de l’ambiance visuelle.'
   },
   {
-    id: 'portrait',
-    title: 'Portrait',
+    id: 'illustration',
+    title: 'Illustration',
     cover: 'assets/image/Picture2.jpg',
     alt: 'Illustration d’un personnage aux couleurs bleues et vertes',
     heroImage: 'assets/image/Picture2.jpg',
-    link: 'projets.html?id=portrait',
     intro: [
       'Ce portrait illustre un personnage introspectif, entre calme et énergie, à travers une palette de bleu et de vert.',
       'L’objectif était de construire une identité visuelle forte, à la fois douce et inattendue.'
@@ -57,7 +57,8 @@ window.PROJECTS = [
       { name: 'Figma', icon: 'assets/icone/Figma.png' }
     ],
     roles: ['Illustratrice', 'Direction artistique'],
-    moodboard: 'assets/image/moodboard1.png',
+    palette: ['#1d2f56', '#6d91b0', '#8bd9d8', '#d9e9ee', '#b7c6d6'],
+    moodboard: ['assets/image/moodboard1.png', 'assets/image/moodboard2.png'],
     contact: 'Une illustration narrative dans laquelle le personnage devient le point central d’une atmosphère rêveuse et technique.'
   },
   {
@@ -73,11 +74,12 @@ window.PROJECTS = [
     ],
     software: [
       { name: 'DaVinci Resolve', icon: 'assets/icone/davinci.png' },
-      { name: 'After Effects', icon: 'assets/icone/After Effect.png' },
+      { name: 'Reaper', icon: 'assets/icone/reaper.png' },
       { name: 'Photoshop', icon: 'assets/icone/photoshop.png' }
     ],
     roles: ['Monteur vidéo', 'Cadreur'],
-    moodboard: 'assets/image/moodboard1.png',
+    palette: ['#0f1b23', '#345a75', '#a3d2d8', '#f3d9bf', '#ffaf9d'],
+    moodboard: ['assets/image/moodboard1.png', 'assets/image/moodboard2.png'],
     contact: 'Le travail se concentre sur l’intimité du cadre et sur la manière dont le mouvement peut transformer un simple détail en un acte narratif.'
   },
   {
@@ -97,7 +99,8 @@ window.PROJECTS = [
       { name: 'Photoshop', icon: 'assets/icone/photoshop.png' }
     ],
     roles: ['Designer graphique', 'Direction artistique'],
-    moodboard: 'assets/image/moodboard1.png',
+    palette: ['#1a1d38', '#5a7bd8', '#7adfd7', '#f1d8b5', '#f6d1ec'],
+    moodboard: ['assets/image/moodboard1.png', 'assets/image/moodboard2.png'],
     contact: 'L’identité visuelle a été construite comme une signature claire, légère et distincte, qui garde une sensation de mouvement.'
   }
 ];

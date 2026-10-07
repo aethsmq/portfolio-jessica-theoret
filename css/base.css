@@ -45,18 +45,13 @@ img {
   align-items: center;
 }
 
-.brand-group {
-  gap: 18px;
-}
 
 .brand {
   display: inline-flex;
   align-items: center;
-  padding: 8px 18px 8px 16px;
-  border: 3px solid var(--line);
+  padding: 8px 18px 8px 16px;;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.15);
-  box-shadow: 3px 4px 0 rgba(0, 0, 0, 0.4);
+ 
   font-family: var(--display);
   font-size: clamp(32px, 2.7vw, 54px);
   line-height: 1;
@@ -68,32 +63,28 @@ img {
 }
 
 .brand img {
-  width: 40px;
-  height: 40px;
+  width: 150px;
+  height: 64px;
   object-fit: contain;
   margin-left: 10px;
 }
 
-.brand-home,
+.brand-home {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  line-height: 1;
+}
+
 .header-action {
   display: grid;
   place-items: center;
   width: 48px;
   height: 48px;
-  border: 3px solid var(--line);
-  border-radius: 50%;
-  background: #ffffff;
-  color: var(--ink);
-  box-shadow: 3px 4px 0 rgba(0, 0, 0, 0.42);
-  font-size: 24px;
   line-height: 1;
 }
 
-.brand-home {
-  background: #000000;
-  color: #ffffff;
-  font-size: 24px;
-}
 
 .header-actions {
   gap: 18px;

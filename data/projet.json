@@ -40,8 +40,8 @@
     "contact": "Un projet de mise en scène vidéo orienté autour du mouvement, de la texture et de l’ambiance visuelle."
   },
   {
-    "id": "portrait",
-    "title": "Portrait",
+    "id": "Illustration",
+    "title": "Illustration",
     "cover": "assets/image/Picture2.jpg",
     "alt": "Illustration d’un personnage aux couleurs bleues et vertes",
     "heroImage": "assets/image/Picture2.jpg",

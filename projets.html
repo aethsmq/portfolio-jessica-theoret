@@ -10,74 +10,90 @@
     <link rel="stylesheet" href="css/layout.css" />
   </head>
   <body class="design-page" id="top" data-page="project">
-    <header class="site-header design-header">
+   <header class="site-header">
       <div class="brand-group">
-        <a class="brand design-brand" href="index.html" aria-label="Retour à l'accueil">
-          <img src="assets/icone/logohome.png" alt="JESS" />
+        <a class="brand" href="index.html" aria-label="Retour à l'accueil">
+          <img src="assets/icone/logohome.png" alt="Illustration de visage" />
         </a>
-        <a class="brand-home" href="#top" aria-label="Accueil">
-          <img src="assets/icone/acceuil icon.png" alt="" />
-        </a>
+        <a class="brand-home" href="#top" aria-label="Accueil"><img src="assets/icone/acceuil icon.png" alt="Illustration de visage" /></a>
       </div>
 
-      <nav class="header-actions" aria-label="Navigation principale">
-        <a class="header-action" href="#roles" aria-label="Profil"><img src="assets/icone/contact icon.png" alt="" /></a>
-        <a class="header-action" href="#software" aria-label="Logiciels"><img src="assets/icone/files 1.png" alt="" /></a>
-        <a class="header-action" href="#contact" aria-label="Contact"><img src="assets/icone/hangouts 1.png" alt="" /></a>
-      </nav>
+      <div class="header-actions" aria-label="Réseaux sociaux et contact">
+        <a class="header-action" href="#about" aria-label="Instagram"><img src="assets/icone/about me icon.png" alt="Illustration de visage" /></a>
+        <a class="header-action" href="#projects" aria-label="Email"><img src="assets/icone/projets icon.png" alt="Illustration de projet" /></a>
+        <a class="header-action" href="#contact" aria-label="Voir le contact"><img src="assets/icone/contact icon.png" alt="Illustration de contact" /></a>
+      </div>
     </header>
 
-    <main>
-      <section class="design-hero" aria-label="Projet d'animation 3D">
-        <div class="design-video">
-          <img id="project-hero-image" src="assets/image/animation3d.png" alt="Personnage flottant dans un univers sous-marin" />
-          <button id="project-play-button" class="play-button" type="button" aria-label="Lire la vidéo"><span></span></button>
-          <span class="video-dot" aria-hidden="true"></span>
-        </div>
-      </section>
-
-      <section class="design-intro" aria-label="Informations sur mes projets">
-        <article class="intro-note">
-          <h1 id="project-title">IN MY MIND</h1>
-          <div id="project-intro-copy">
-            <p>
-              Une animation en 3D sur une petite fille dans son univers, s'enfonçant toujours plus profondément dans son imagination.
-            </p>
-            <p>
-              niubvyctgx rftfcgvhjbknlibjugv yctgx rffgchvjbknbuhvycgtrfxfgchvjbknljbhvgcf
-              fytgvhjbkhvgctyyghvjbknbhv gwer ehthgdfsd agftrffedwads fgrthrgefdaSFEGR
-            </p>
+    <main class="project-shell">
+      <div class="project-sheet">
+        <section class="design-hero" aria-label="Projet d'animation 3D">
+          <div class="design-video">
+            <img id="project-hero-image" src="assets/image/animation3d.png" alt="Personnage flottant dans un univers sous-marin" />
+            <button id="project-play-button" class="play-button" type="button" aria-label="Lire la vidéo"><span></span></button>
+            <span class="video-dot" aria-hidden="true"></span>
           </div>
-          <img class="folder-sticker" src="assets/icone/files 2.png" alt="" />
-        </article>
+        </section>
 
-        <div class="intro-side">
-          <article class="info-card" id="software">
-            <h2>LOGICIELS</h2>
-            <div id="project-software-list" class="software-list" aria-label="Logiciels utilisés"></div>
+        <section class="design-intro" aria-label="Informations sur mes projets">
+          <article class="intro-note">
+            <h1 id="project-title">IN MY MIND</h1>
+            <div id="project-intro-copy">
+              <p>
+                Une animation en 3D sur une petite fille dans son univers, s'enfonçant toujours plus profondément dans son imagination.
+              </p>
+              <p>
+                niubvyctgx rftfcgvhjbknlibjugv yctgx rffgchvjbknbuhvycgtrfxfgchvjbknljbhvgcf
+                fytgvhjbkhvgctyyghvjbknbhv gwer ehthgdfsd agftrffedwads fgrthrgefdaSFEGR
+              </p>
+            </div>
+            <img class="folder-sticker" src="assets/icone/files 2.png" alt="" />
           </article>
-          <article class="info-card roles-card" id="roles">
-            <h2>Rôles</h2>
-            <ul id="project-roles-list"></ul>
-          </article>
-        </div>
-      </section>
 
-      <section class="moodboard-section" aria-label="Moodboard du projet">
-        <button class="moodboard-arrow" type="button" aria-label="Moodboard précédent">&lt;</button>
-        <figure class="moodboard-frame">
-          <img id="project-moodboard-image" src="assets/image/moodboard1.png" alt="Moodboard avec illustrations nocturnes et palette de couleurs" />
-        </figure>
-        <button class="moodboard-arrow" type="button" aria-label="Moodboard suivant">&gt;</button>
-      </section>
+          <div class="intro-side">
+            <article class="info-card" id="software">
+              <h2>LOGICIELS</h2>
+              <div id="project-software-list" class="software-list" aria-label="Logiciels utilisés"></div>
+            </article>
+            <article class="info-card roles-card" id="roles">
+              <h2>Rôles</h2>
+              <ul id="project-roles-list"></ul>
+            </article>
+          </div>
+        </section>
 
-      <section class="design-contact" id="contact" aria-label="Description du projet">
-        <p id="project-contact-text">
-          niubvyctgx rftfcgvhjbknlibjugv yctgx rffgchvjbknbuhvycgtrfxfgchvjbknljbhvgcf hxdzxgchvjbknbhvgcfxdchjkhgvcfxgchvjbkhvgctyfrxtcgyvhyujbknbhvgcy
-          fytgvhjbkhvgctyyghvjbknbhv
-        </p>
-        <img src="assets/icone/music 1.png" alt="" />
-      </section>
+        <section class="portrait-gallery-section" id="portrait-gallery" hidden aria-label="Autres projets du portrait">
+          <div class="moodboard-section portrait-gallery-inner">
+            <button class="moodboard-arrow" type="button" aria-label="Projet précédent">&lt;</button>
+            <figure class="moodboard-frame">
+              <img id="portrait-gallery-image" src="assets/image/Image1.jpg" alt="Autres projets du portrait" />
+            </figure>
+            <button class="moodboard-arrow" type="button" aria-label="Projet suivant">&gt;</button>
+          </div>
+        </section>
+        
+        <section class="project-palette-section" aria-label="Palette de couleur du projet">
+          <h2>Palette de couleur</h2>
+          <div id="project-palette" class="project-palette" aria-label="Palette de couleur"></div>
+        </section>
+
+        <section class="moodboard-section" aria-label="Moodboard du projet">
+          <button class="moodboard-arrow" type="button" aria-label="Moodboard précédent">&lt;</button>
+          <figure class="moodboard-frame">
+            <img id="project-moodboard-image" src="assets/image/moodboard1.png" alt="Moodboard avec illustrations nocturnes et palette de couleurs" />
+          </figure>
+          <button class="moodboard-arrow" type="button" aria-label="Moodboard suivant">&gt;</button>
+        </section>
+
+
+        <section class="design-contact" id="contact" aria-label="Description du projet">
+          <p id="project-contact-text">
+            niubvyctgx rftfcgvhjbknlibjugv yctgx rffgchvjbknbuhvycgtrfxfgchvjbknljbhvgcf hxdzxgchvjbknbhvgcfxdchjkhgvcfxgchvjbkhvgctyfrxtcgyvhyujbknbhvgcy
+            fytgvhjbkhvgctyyghvjbknbhv
+          </p>
+          <img src="assets/icone/music 1.png" alt="" />
+        </section>
+      </div>
     </main>
 
     <script src="css/js/data.js"></script>
