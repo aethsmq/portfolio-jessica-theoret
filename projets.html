@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="fr">
   <head>
+    <!-- Configuration de la page projet et feuilles de style partagees. -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Projets de Jessica Theoret : animation 3D, montage vidéo et direction artistique." />
@@ -10,7 +11,8 @@
     <link rel="stylesheet" href="css/layout.css" />
   </head>
   <body class="design-page" id="top" data-page="project">
-   <header class="site-header">
+    <!-- Navigation fixe partagee avec la page d'accueil. -->
+    <header class="site-header">
       <div class="brand-group">
         <a class="brand" href="index.html" aria-label="Retour à l'accueil">
           <img src="assets/icone/logohome.png" alt="Illustration de visage" />
@@ -25,8 +27,10 @@
       </div>
     </header>
 
+    <!-- Contenu du projet selectionne dans l'URL. -->
     <main class="project-shell">
       <div class="project-sheet">
+        <!-- Image principale et bouton qui ouvre le lien video du projet. -->
         <section class="design-hero" aria-label="Projet d'animation 3D">
           <div class="design-video">
             <img id="project-hero-image" src="assets/image/animation3d.png" alt="Personnage flottant dans un univers sous-marin" />
@@ -35,16 +39,15 @@
           </div>
         </section>
 
+        <!-- Presentation, logiciels utilises et roles du projet. -->
         <section class="design-intro" aria-label="Informations sur mes projets">
           <article class="intro-note">
             <h1 id="project-title">IN MY MIND</h1>
             <div id="project-intro-copy">
+              <p>Une animation en 3D sur une petite fille dans son univers, s'enfonçant toujours plus profondément dans son imagination.</p>
               <p>
-                Une animation en 3D sur une petite fille dans son univers, s'enfonçant toujours plus profondément dans son imagination.
-              </p>
-              <p>
-                niubvyctgx rftfcgvhjbknlibjugv yctgx rffgchvjbknbuhvycgtrfxfgchvjbknljbhvgcf
-                fytgvhjbkhvgctyyghvjbknbhv gwer ehthgdfsd agftrffedwads fgrthrgefdaSFEGR
+                niubvyctgx rftfcgvhjbknlibjugv yctgx rffgchvjbknbuhvycgtrfxfgchvjbknljbhvgcf fytgvhjbkhvgctyyghvjbknbhv gwer ehthgdfsd agftrffedwads
+                fgrthrgefdaSFEGR
               </p>
             </div>
             <img class="folder-sticker" src="assets/icone/files 2.png" alt="" />
@@ -62,6 +65,7 @@
           </div>
         </section>
 
+        <!-- Galerie reservee aux images supplementaires du projet illustration. -->
         <section class="portrait-gallery-section" id="portrait-gallery" hidden aria-label="Autres projets du portrait">
           <div class="moodboard-section portrait-gallery-inner">
             <button class="moodboard-arrow" type="button" aria-label="Projet précédent">&lt;</button>
@@ -71,13 +75,15 @@
             <button class="moodboard-arrow" type="button" aria-label="Projet suivant">&gt;</button>
           </div>
         </section>
-        
+
+        <!-- Palette de couleurs remplie depuis les donnees du projet. -->
         <section class="project-palette-section" aria-label="Palette de couleur du projet">
           <h2>Palette de couleur</h2>
           <div id="project-palette" class="project-palette" aria-label="Palette de couleur"></div>
         </section>
 
-        <section class="moodboard-section" aria-label="Moodboard du projet">
+        <!-- Moodboard affiche uniquement pour le projet illustration. -->
+        <section class="moodboard-section" id="project-moodboard" hidden aria-label="Moodboard du projet">
           <button class="moodboard-arrow" type="button" aria-label="Moodboard précédent">&lt;</button>
           <figure class="moodboard-frame">
             <img id="project-moodboard-image" src="assets/image/moodboard1.png" alt="Moodboard avec illustrations nocturnes et palette de couleurs" />
@@ -85,8 +91,8 @@
           <button class="moodboard-arrow" type="button" aria-label="Moodboard suivant">&gt;</button>
         </section>
 
-
-        <section class="design-contact" id="contact" aria-label="Description du projet">
+        <!-- Description finale du projet et element decoratif sonore. -->
+        <section class="design-contact" id="contact" hidden aria-label="Description du projet">
           <p id="project-contact-text">
             niubvyctgx rftfcgvhjbknlibjugv yctgx rffgchvjbknbuhvycgtrfxfgchvjbknljbhvgcf hxdzxgchvjbknbhvgcfxdchjkhgvcfxgchvjbkhvgctyfrxtcgyvhyujbknbhvgcy
             fytgvhjbkhvgctyyghvjbknbhv
@@ -96,6 +102,7 @@
       </div>
     </main>
 
+    <!-- Chargement des donnees puis rendu dynamique du projet. -->
     <script src="css/js/data.js"></script>
     <script src="css/js/website.js"></script>
   </body>

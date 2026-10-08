@@ -1,11 +1,14 @@
+/* Regles de base communes a toutes les pages. */
 * {
   box-sizing: border-box;
 }
 
+/* Defilement fluide et couleurs generales du site. */
 html {
   scroll-behavior: smooth;
 }
 
+/* Mise en page generale du document. */
 body {
   margin: 0;
   color: var(--ink);
@@ -14,16 +17,19 @@ body {
   overflow-x: hidden;
 }
 
+/* Liens sans soulignement pour suivre le style graphique du portfolio. */
 a {
   color: inherit;
   text-decoration: none;
 }
 
+/* Images responsives par defaut. */
 img {
   display: block;
   max-width: 100%;
 }
 
+/* En-tete sticky partagee par les pages. */
 .site-header {
   position: sticky;
   z-index: 30;
@@ -39,19 +45,20 @@ img {
   backdrop-filter: blur(2px);
 }
 
+/* Groupes de navigation et actions de l'en-tete. */
 .brand-group,
 .header-actions {
   display: flex;
   align-items: center;
 }
 
-
+/* Logo principal. */
 .brand {
   display: inline-flex;
   align-items: center;
-  padding: 8px 18px 8px 16px;;
+  padding: 8px 18px 8px 16px;
   border-radius: 999px;
- 
+
   font-family: var(--display);
   font-size: clamp(32px, 2.7vw, 54px);
   line-height: 1;
@@ -69,6 +76,7 @@ img {
   margin-left: 10px;
 }
 
+/* Bouton accueil et boutons d'actions avec icones. */
 .brand-home {
   display: grid;
   place-items: center;
@@ -85,11 +93,11 @@ img {
   line-height: 1;
 }
 
-
 .header-actions {
   gap: 18px;
 }
 
+/* Petit deplacement au survol des liens de l'en-tete. */
 .header-action:hover,
 .brand:hover,
 .brand-home:hover {

@@ -1,3 +1,4 @@
+/* Polices locales utilisees par les titres, le texte et les elements decoratifs. */
 @font-face {
   font-family: "Bootzy TM";
   src: url("../assets/fonts/BootzyTM.ttf") format("truetype");
@@ -24,6 +25,7 @@
   font-display: swap;
 }
 
+/* Variables globales de couleur, typographie et contours. */
 :root {
   --ink: #080808;
   --paper: #ffffff;

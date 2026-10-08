@@ -38,3 +38,24 @@ J'ai utilisé l'IA pour me générer des idées visuelles. Ça m'a bien pas vrai
 **outils:** figma make <br>
 **résultats:**
 <img width="1440" height="3224" alt="Project page for portfolio" src="https://github.com/user-attachments/assets/72307373-8ca0-463b-b298-61463db2f1bf" />
+
+**date:** 01/10/2026 <br>
+**prompt:** Dans ma div « tools », je veux que lorsque je survole les icônes, elles s’agrandissent légèrement et que le nom du logiciel s’affiche en dessous. <br>
+**outils:** Copilot/vs code <br>
+
+**date:** 01/10/2026 <br>
+**prompt:** Pourquoi ma section « portrait-gallery-section » sur ma page de projet d’illustration a-t-elle disparu ? <br>
+**outils:** Copilot/Vs code <br>
+**réponse:** J’ai trouvé la raison : la galerie est associée à un seul identifiant de projet, mais le projet d’illustration est enregistré sous un identifiant différent. Je vais modifier cette vérification pour qu’elle corresponde aux deux noms afin que la galerie reste visible sur la page du projet d’illustration. <br>
+
+**date:** 04/10/2026 <br>
+**prompt:** Je veux aussi ajouter une animation de texte avec un effet de machine à écrire (typing effect) sur les textes « 2026 » et « Jessica Théorêt » dans la section d’accueil (Home) de mon site. <br>
+**outils:** Copilot/Vs code <br>
+
+**date:** 07/10/2026 <br>
+**prompt:** Est-ce qu’il serait possible de garder ma section Moodboard uniquement sur ma page Illustration et de la supprimer des autres pages de projets ? <br>
+**outils:** Copilot/Vs code <br>
+
+**date:** 07/10/2026 <br>
+**prompt:** Est-ce qu’il serait possible de garder ma section Moodboard uniquement sur ma page Illustration et de la supprimer des autres pages de projets ? <br>
+**outils:** Copilot/Vs code <br>

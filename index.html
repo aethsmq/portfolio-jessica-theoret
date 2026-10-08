@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="fr">
   <head>
+    <!-- Configuration de la page d'accueil et feuilles de style partagees. -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Portfolio de Jessica Theoret, designer graphique et créative numérique." />
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
   </head>
   <body id="top" data-page="home">
+    <!-- Navigation principale: logo, accueil, a propos, projets et contact. -->
     <header class="site-header">
       <div class="brand-group">
         <a class="brand" href="index.html" aria-label="Retour à l'accueil">
@@ -26,18 +28,20 @@
     </header>
 
     <main>
+      <!-- Hero: fenetre graphique avec l'annee, le titre et le nom. -->
       <section class="hero" aria-labelledby="hero-title">
         <div class="window window--hero">
           <span class="window-control" aria-hidden="true">×</span>
           <span class="window-control window-control--right" aria-hidden="true">×</span>
           <p class="year">2026</p>
-          <h1 id="hero-title"><img src="assets/image/PORFOLIO.png" alt="Portfolio" /></h1>
+          <h1 id="hero-title"><img src="assets/image/PORTFOLIO.png" alt="Portfolio" /></h1>
           <p class="hero-name">Jessica Theoret</p>
           <span class="window-control window-control--bottom" aria-hidden="true">×</span>
           <span class="window-control window-control--bottom window-control--right" aria-hidden="true">×</span>
         </div>
       </section>
 
+      <!-- Section a propos: portrait, presentation, formation et logiciels. -->
       <section class="about" id="about" aria-labelledby="about-title">
         <div class="about-backdrop"></div>
         <div class="about-title-wrap">
@@ -49,15 +53,15 @@
             <img class="flower" src="assets/icone/extra - flower 1.png" alt="" />
           </figure>
           <article class="about-card">
-            <h3>Salut!</h3>
+            <h3 class="typing-about typing-about--salut">Salut!</h3>
             <p>Je suis Jessica, une créative curieuse qui aime donner vie aux idées grâce au design, à l'image et aux expériences numériques.</p>
             <div class="facts">
               <div>
-                <h4>Éducation</h4>
+                <h4 class="typing-about typing-about--education">Éducation</h4>
                 <p>Collège Montmorency<br />2023, 2027</p>
               </div>
               <div>
-                <h4>Language</h4>
+                <h4 class="typing-about typing-about--language">Language</h4>
                 <p>français &nbsp;&nbsp; anglais</p>
               </div>
             </div>
@@ -91,6 +95,7 @@
         </div>
       </section>
 
+      <!-- Section projets: la galerie est remplie dynamiquement par website.js. -->
       <section class="projects-section" id="projects" aria-labelledby="projects-title">
         <div class="projects-main">
           <h2 class="projects-title" id="projects-title">PROJETS</h2>
@@ -116,6 +121,7 @@
       </section>
     </main>
 
+    <!-- Pied de page avec navigation secondaire et signature visuelle. -->
     <footer class="site-footer">
       <h2>MERCI POUR VOTRE CURIOSITÉ</h2>
       <nav aria-label="Navigation du pied de page">
@@ -129,6 +135,7 @@
       </div>
     </footer>
 
+    <!-- Donnees de secours puis logique d'affichage de la page. -->
     <script src="css/js/data.js"></script>
     <script src="css/js/website.js"></script>
   </body>

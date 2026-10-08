@@ -8,7 +8,7 @@
     "videoLink": "https://youtu.be/b_uDgA1EgUw",
     "link": "https://youtu.be/b_uDgA1EgUw",
     "intro": [
-      "Une animation en 3D sur une petite fille dans son univers, s’enfonçant toujours plus profondément dans son imagination.",
+      "Une animation en 3D qui suit une petite fille dans son univers, où son imagination prend peu à peu vie autour d’elle. À travers différents décors et situations, elle s’enfonce toujours plus profondément dans son monde intérieur, laissant la réalité se mélanger à ses rêves.",
       "Le projet explore le voyage intérieur, la curiosité et la sensation de flotter entre rêve et réalité."
     ],
     "software": [
@@ -21,19 +21,17 @@
     "contact": "Une expérience visuelle et sonore qui plonge le spectateur dans une rêverie subaquatique où l’imagination prend le dessus."
   },
   {
-    "id": "tv-motion",
-    "title": "TV Motion",
+    "id": "La reflection perdue",
+    "title": "La reflection perdue",
     "cover": "assets/image/video2.png",
     "alt": "Projet vidéo avec une télévision et des chaussures",
     "heroImage": "https://youtu.be/zXPtqvA6bJQ",
     "intro": [
-      "Une séquence visuelle expérimentale qui mixe image, rythme et objets du quotidien pour créer une narration cinématographique.",
-      "L’idée était de donner de la vie à un espace domestique en jouant avec les angles, les mouvements et la couleur."
+      "une jeune fille plongée dans sa lecture perd peu à peu le fil du réel. Lorsqu'elle détache ses yeux des pages, le paysage urbain a cédé la place à une atmosphère décalée : sans s'en rendre compte, elle a franchi la frontière d'une autre dimension. Mais le véritable trouble survient lorsqu'au bout du wagon, son regard croise celui d'une passagère au visage parfaitement identique au sien."
     ],
     "software": [
       { "name": "DaVinci Resolve", "icon": "assets/icone/davinci.png" },
-      { "name": "After Effects", "icon": "assets/icone/After Effect.png" },
-      { "name": "Photoshop", "icon": "assets/icone/photoshop.png" }
+      { "name": "Reaper", "icon": "assets/icone/reaper.png" }
     ],
     "roles": ["Monteur vidéo", "Motion designer"],
     "moodboard": "assets/image/moodboard1.png",
@@ -46,8 +44,7 @@
     "alt": "Illustration d’un personnage aux couleurs bleues et vertes",
     "heroImage": "assets/image/Picture2.jpg",
     "intro": [
-      "Ce portrait illustre un personnage introspectif, entre calme et énergie, à travers une palette de bleu et de vert.",
-      "L’objectif était de construire une identité visuelle forte, à la fois douce et inattendue."
+      "Un projet d’illustration composé de six dessins et d’un logo, réalisés avec une palette de couleurs cohérente afin de créer une identité visuelle uniforme. Les illustrations s’inspirent de l’esthétique Y2K et du style anime, en mélangeant des couleurs vibrantes, des formes dynamiques et une touche rétro-futuriste. L’objectif était de créer un univers visuel reconnaissable et harmonieux à travers l’ensemble des créations."
     ],
     "software": [
       { "name": "Illustrator", "icon": "assets/icone/Illustrator icon.png" },
@@ -55,18 +52,17 @@
       { "name": "Figma", "icon": "assets/icone/Figma.png" }
     ],
     "roles": ["Illustratrice", "Direction artistique"],
-    "moodboard": "assets/image/moodboard1.png",
-    "contact": "Une illustration narrative dans laquelle le personnage devient le point central d’une atmosphère rêveuse et technique."
+    "moodboard": "assets/image/Image2.jpg",
+    "contact": "Ce moodboard présente une direction artistique inspirée de l’esthétique Y2K, avec une approche graphique colorée et futuriste. Les références mettent en avant des formes arrondies, des typographies originales, des effets de contour et des éléments graphiques"
   },
   {
-    "id": "close-up",
-    "title": "Close Up",
+    "id": "metamorphose",
+    "title": "metamorphose",
     "cover": "assets/image/video1.png",
     "alt": "Projet vidéo en gros plan",
     "heroImage": "assets/image/video1.png",
     "intro": [
-      "Un montage rapproché, cinétique et immersif qui fait ressortir les détails, les textures et les émotions.",
-      "Le projet met l’accent sur l’intimité visuelle et sur le rythme de la coupe pour construire une expérience plus intense."
+      "Un projet de montage vidéo rapproché, cinétique et immersif, inspiré de l’univers mystérieux et envoûtant des sirènes. Le montage met l’accent sur les détails du visage, les textures et le maquillage afin de créer une esthétique aquatique et captivante. Les nuances de bleu et de violet dominent l’ensemble du projet pour rappeler l’ambiance sous-marine et renforcer son côté rêveur, mystérieux et fantastique."
     ],
     "software": [
       { "name": "DaVinci Resolve", "icon": "assets/icone/davinci.png" },
@@ -78,14 +74,13 @@
     "contact": "Le travail se concentre sur l’intimité du cadre et sur la manière dont le mouvement peut transformer un simple détail en un acte narratif."
   },
   {
-    "id": "branding",
-    "title": "Branding",
+    "id": "Animorency",
+    "title": "Animorency",
     "cover": "assets/image/logo color ver.png",
     "alt": "Projet d’identité visuelle animé",
     "heroImage": "assets/image/logo color ver.png",
     "intro": [
-      "Un travail d’identité visuelle pensé pour exprimer une présence moderne, fluide et mémorable.",
-      "Chaque élément a été conçu pour créer un univers cohérent entre typographie, couleur et mouvement."
+      "Un projet de création de logo pour le club Animorency de l’AGEM. Le design s’inspire de l’esthétique anime afin de représenter l’univers du club de manière dynamique et reconnaissable. L’objectif était de créer un logo qui reflète davantage l’identité du club, ses intérêts et son côté créatif, tout en ayant une apparence moderne et attrayante pour les étudiants."
     ],
     "software": [
       { "name": "Illustrator", "icon": "assets/icone/Illustrator icon.png" },
