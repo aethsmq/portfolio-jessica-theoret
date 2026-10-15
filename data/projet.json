@@ -16,7 +16,7 @@
       { "name": "Maya", "icon": "assets/icone/maya.png" },
       { "name": "Illustrator", "icon": "assets/icone/Illustrator icon.png" }
     ],
-    "roles": ["Animateur 3d", "Monteuse video"],
+    "roles": ["Animatrice 3D", "Monteuse vidéo"],
     "moodboard": "assets/image/moodboard1.png",
     "contact": "Une expérience visuelle et sonore qui plonge le spectateur dans une rêverie subaquatique où l’imagination prend le dessus."
   },
@@ -56,7 +56,7 @@
     "contact": "Ce moodboard présente une direction artistique inspirée de l’esthétique Y2K, avec une approche graphique colorée et futuriste. Les références mettent en avant des formes arrondies, des typographies originales, des effets de contour et des éléments graphiques"
   },
   {
-    "id": "metamorphose",
+    "id": "métamorphose",
     "title": "metamorphose",
     "cover": "assets/image/video1.png",
     "alt": "Projet vidéo en gros plan",

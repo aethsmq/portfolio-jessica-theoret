@@ -14,6 +14,21 @@
   box-shadow: 4px 10px 4px rgba(0, 0, 0, 0.45);
 }
 
+@keyframes hero-window-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.7) translateY(14px);
+  }
+  65% {
+    opacity: 1;
+    transform: scale(1.04) translateY(-4px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
 /* Variante principale de la fenetre du hero. */
 .window--hero {
   width: min(802px, 100%);
@@ -23,6 +38,7 @@
   align-items: center;
   justify-content: center;
   padding: 47px 14px 54px;
+  animation: hero-window-pop 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) both;
 }
 
 /* Faux boutons de fenetre decoratifs. */
@@ -99,21 +115,20 @@
 
 /* Animation de frappe du nom dans le hero. */
 .hero-name {
-  width: 100%;
-  margin: 37px 0 0;
+  display: inline-block;
+  width: 15ch;
+  margin: 37px auto 0;
   padding: 6px 10px 3px;
   background: var(--green);
   color: var(--blue);
   text-align: center;
-  font: 34px/1 var(--pixel);
+  font: 28px/1 var(--pixel);
   letter-spacing: 1px;
-  display: inline-block;
   overflow: hidden;
   white-space: nowrap;
   border-right: 2px solid var(--blue);
-  width: 0;
   animation:
-    typing-name 2.1s steps(18, end) forwards,
+    typing-name 2.1s steps(15, end) forwards,
     blink-caret 0.8s step-end infinite;
   animation-delay: 1.3s;
 }
@@ -124,7 +139,7 @@
     width: 0;
   }
   to {
-    width: 18ch;
+    width: 15ch;
   }
 }
 
@@ -170,6 +185,30 @@
   align-items: center;
   justify-content: center;
   gap: clamp(28px, 4vw, 62px);
+}
+
+@media (max-width: 900px) {
+  .about {
+    padding-inline: 24px;
+  }
+
+  .about-title-wrap {
+    width: min(100%, 540px);
+    margin: -42px auto 52px;
+    transform: rotate(2deg);
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .about-card h3,
+  .about-card p,
+  .facts {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
 }
 
 /* Cadre du portrait et image decorative. */
@@ -398,11 +437,12 @@
   }
 
   .about {
-    padding: 75px 28px 70px;
+    padding: 75px 20px 70px;
   }
 
   .about-title-wrap {
-    margin: -35px auto 58px;
+    margin: -35px auto 52px;
+    transform: rotate(1.5deg);
   }
 
   .about-title-wrap h2 {
@@ -411,7 +451,7 @@
 
   .about-content {
     grid-template-columns: 1fr;
-    gap: 57px;
+    gap: 42px;
   }
 
   .portrait-frame {
@@ -419,9 +459,22 @@
     margin: 0 auto;
   }
 
+  .about-card h3,
+  .about-card p,
+  .facts {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .facts {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
   .tools {
     flex-wrap: wrap;
     gap: 10px;
+    padding-inline: 12px;
   }
 }
 
@@ -517,30 +570,59 @@
   object-fit: cover;
 }
 
-.play-button {
-  position: absolute;
-  inset: 50% auto auto 50%;
-  width: 0;
-  height: 0;
-  padding: 0;
-  border: 0;
-  border-top: 29px solid transparent;
-  border-bottom: 29px solid transparent;
-  border-left: 48px solid #ffffff;
-  background: transparent;
-  transform: translate(-27%, -50%);
-  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.15));
-  cursor: pointer;
+.project-video-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(7, 9, 15, 0.8);
+  z-index: 1000;
 }
 
-.video-dot {
+.project-video-overlay.hidden {
+  display: none;
+}
+
+.project-video-modal {
+  position: relative;
+  width: min(980px, 100%);
+  background: #111827;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.project-video-close {
   position: absolute;
-  bottom: 14px;
-  left: 50%;
-  width: 6px;
-  height: 6px;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border: 0;
   border-radius: 50%;
-  background: #d6d6d6;
+  background: rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+  font-size: 1.8rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.project-video-frame-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000000;
+}
+
+.project-video-frame-wrap iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 /* Bloc d'introduction et cartes d'informations du projet. */
@@ -883,7 +965,7 @@
 }
 
 .projects-main {
-  width: min(100% - 32px, 700px);
+  width: min(100% - 32px, 1100px);
   margin: 0 auto;
   padding: 78px 0 118px;
 }
@@ -901,14 +983,19 @@
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 27px 32px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px 32px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Carte projet: mouvement au survol et zoom de l'image. */
 .project-tile {
   position: relative;
   display: block;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
   aspect-ratio: 1.5;
   overflow: hidden;
   border: 2px solid var(--line);

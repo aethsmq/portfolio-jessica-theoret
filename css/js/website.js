@@ -56,6 +56,92 @@ function normalizeProjectList(value) {
   return [];
 }
 
+function getYouTubeEmbedUrl(videoUrl) {
+  if (!videoUrl) {
+    return "";
+  }
+
+  try {
+    const url = new URL(videoUrl);
+    const host = url.hostname.toLowerCase();
+
+    if (host.includes("youtu.be")) {
+      const videoId = url.pathname.replace(/^\//, "").split("/")[0];
+      return videoId ? `https://www.youtube.com/embed/${videoId}` : "";
+    }
+
+    if (host.includes("youtube.com")) {
+      const videoId = url.searchParams.get("v");
+      return videoId ? `https://www.youtube.com/embed/${videoId}` : "";
+    }
+  } catch (error) {
+    console.warn("Unable to normalize YouTube URL:", videoUrl, error);
+  }
+
+  return "";
+}
+
+function setupProjectVideoPlayer(project) {
+  const heroImage = document.querySelector("#project-hero-image");
+  const overlay = document.querySelector("#project-video-overlay");
+  const frame = document.querySelector("#project-video-frame");
+  const closeButton = document.querySelector("#project-video-close");
+
+  if (!heroImage || !overlay || !frame) {
+    return;
+  }
+
+  const allowedProjects = ["in my mind", "la reflection perdue", "metamorphose"];
+  const projectKey = (project?.id || "").trim().toLowerCase();
+  const videoUrl = project?.videoLink || project?.link || "";
+  const embedUrl = getYouTubeEmbedUrl(videoUrl);
+  const shouldOpenInlineVideo = allowedProjects.includes(projectKey) && Boolean(embedUrl);
+
+  const closeVideo = () => {
+    overlay.classList.add("hidden");
+    overlay.setAttribute("aria-hidden", "true");
+    frame.src = "";
+  };
+
+  if (closeButton) {
+    closeButton.onclick = closeVideo;
+  }
+
+  overlay.onclick = (event) => {
+    if (event.target === overlay) {
+      closeVideo();
+    }
+  };
+
+  if (!shouldOpenInlineVideo) {
+    heroImage.style.cursor = "default";
+    heroImage.onclick = null;
+    heroImage.onkeydown = null;
+    heroImage.removeAttribute("role");
+    heroImage.removeAttribute("tabindex");
+    closeVideo();
+    return;
+  }
+
+  heroImage.style.cursor = "pointer";
+  heroImage.setAttribute("role", "button");
+  heroImage.setAttribute("tabindex", "0");
+
+  const openVideo = () => {
+    frame.src = `${embedUrl}?autoplay=1&rel=0`;
+    overlay.classList.remove("hidden");
+    overlay.setAttribute("aria-hidden", "false");
+  };
+
+  heroImage.onclick = openVideo;
+  heroImage.onkeydown = (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      openVideo();
+    }
+  };
+}
+
 // Gere le moodboard: il est visible uniquement pour le projet illustration.
 function renderProjectMoodboard(project, moodboardImage, previousButton, nextButton) {
   const moodboardSection = document.querySelector("#project-moodboard");
@@ -155,7 +241,6 @@ function renderProjectPage(project) {
   const moodboardImage = document.querySelector("#project-moodboard-image");
   const contactSection = document.querySelector("#contact");
   const contactText = document.querySelector("#project-contact-text");
-  const playButton = document.querySelector("#project-play-button");
   const paletteContainer = document.querySelector("#project-palette");
   const previousButton = document.querySelector('#project-moodboard .moodboard-arrow[aria-label="Moodboard précédent"]');
   const nextButton = document.querySelector('#project-moodboard .moodboard-arrow[aria-label="Moodboard suivant"]');
@@ -167,18 +252,6 @@ function renderProjectPage(project) {
   const isIllustrationProject = (project.id || "").toLowerCase() === "illustration";
   if (contactSection) {
     contactSection.hidden = !isIllustrationProject;
-  }
-
-  const videoLink = project.videoLink || project.link || "";
-
-  // Ouvre le lien video du projet dans un nouvel onglet.
-  if (playButton) {
-    playButton.dataset.videoLink = videoLink;
-    playButton.onclick = () => {
-      if (videoLink) {
-        window.open(videoLink, "_blank", "noopener,noreferrer");
-      }
-    };
   }
 
   // Remplit le hero et le titre du projet.
@@ -221,6 +294,7 @@ function renderProjectPage(project) {
   // Lance les deux galeries apres avoir rempli les informations principales.
   renderProjectMoodboard(project, moodboardImage, previousButton, nextButton);
   renderPortraitGallery(project);
+  setupProjectVideoPlayer(project);
 
   if (contactText) {
     contactText.textContent = project.contact || "";

@@ -34,8 +34,6 @@
         <section class="design-hero" aria-label="Projet d'animation 3D">
           <div class="design-video">
             <img id="project-hero-image" src="assets/image/animation3d.png" alt="Personnage flottant dans un univers sous-marin" />
-            <button id="project-play-button" class="play-button" type="button" aria-label="Lire la vidéo"><span></span></button>
-            <span class="video-dot" aria-hidden="true"></span>
           </div>
         </section>
 
@@ -78,7 +76,7 @@
 
         <!-- Palette de couleurs remplie depuis les donnees du projet. -->
         <section class="project-palette-section" aria-label="Palette de couleur du projet">
-          <h2>Palette de couleur</h2>
+          <h2>Palette de couleurs</h2>
           <div id="project-palette" class="project-palette" aria-label="Palette de couleur"></div>
         </section>
 
@@ -101,6 +99,15 @@
         </section>
       </div>
     </main>
+
+    <div id="project-video-overlay" class="project-video-overlay hidden" aria-hidden="true">
+      <div class="project-video-modal" role="dialog" aria-modal="true" aria-label="Vidéo du projet">
+        <button id="project-video-close" class="project-video-close" type="button" aria-label="Fermer la vidéo">×</button>
+        <div class="project-video-frame-wrap">
+          <iframe id="project-video-frame" src="" title="Vidéo du projet" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
 
     <!-- Chargement des donnees puis rendu dynamique du projet. -->
     <script src="css/js/data.js"></script>

@@ -18,7 +18,7 @@ window.PROJECTS = [
       { name: "Maya", icon: "assets/icone/maya.png" },
       { name: "Illustrator", icon: "assets/icone/Illustrator icon.png" },
     ],
-    roles: ["Animateur 3d", "Monteuse video"],
+    roles: ["Animatrice 3D", "Monteuse vidéo"],
     palette: ["#051028", "#C3D6E5", "#fbd984", "#9C8AFF", "#ffffff"],
     moodboard: ["assets/image/moodboard1.png", "assets/image/moodboard2.png"],
     contact: "Une expérience visuelle et sonore qui plonge le spectateur dans une rêverie subaquatique où l’imagination prend le dessus.",
@@ -62,7 +62,7 @@ window.PROJECTS = [
   },
   // Projet de montage video inspire par un univers sous-marin.
   {
-    id: "metamorphose",
+    id: "métamorphose",
     title: "Metamorphose",
     cover: "assets/image/metamorphosegif.gif",
     alt: "Projet vidéo en gros plan",
