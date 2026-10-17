@@ -409,8 +409,8 @@
   }
 
   .brand img {
-    width: 29px;
-    height: 29px;
+    width: clamp(90px, 24vw, 150px);
+    height: clamp(42px, 12vw, 64px);
   }
 
   .hero {
@@ -566,7 +566,6 @@
 
 .design-video > img {
   width: 100%;
-  aspect-ratio: 1.78;
   object-fit: cover;
 }
 
@@ -1153,7 +1152,7 @@
 .site-footer {
   position: relative;
   overflow: hidden;
-  min-height: 320px;
+  min-height: clamp(360px, 45vw, 300px);
   padding: 36px 4vw 0;
   background: #f4c3ec;
   color: var(--blue);
@@ -1179,11 +1178,14 @@
 }
 
 .footer-mark {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  height: 155px;
-  margin-top: 30px;
+  height: clamp(220px, 30vw, 360px);
   color: var(--ink);
   white-space: nowrap;
 }
@@ -1191,12 +1193,13 @@
 .footer-mark span {
   font: clamp(125px, 14vw, 240px)/0.7 var(--display);
   letter-spacing: 0;
+  transform: translateY(clamp(10px, 1.5vw, 24px));
 }
 
 .footer-mark img {
-  width: clamp(135px, 16vw, 270px);
+  width: clamp(260px, 30vw, 540px);
   max-width: none;
-  height: clamp(140px, 17vw, 285px);
+  height: clamp(300px, 38vw, 650px);
   object-fit: contain;
   object-position: bottom left;
   margin-left: 5px;
@@ -1242,7 +1245,7 @@
   }
 
   .site-footer {
-    min-height: 260px;
+    min-height: 420px;
     padding-top: 30px;
   }
 
@@ -1253,10 +1256,14 @@
 
   .footer-mark {
     height: 120px;
-    margin-top: 25px;
   }
 
   .footer-mark span {
     letter-spacing: 0;
+  }
+
+  .footer-mark img {
+    width: clamp(180px, 48vw, 300px);
+    height: clamp(220px, 56vw, 350px);
   }
 }
