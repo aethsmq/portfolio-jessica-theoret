@@ -92,7 +92,11 @@ function setupProjectVideoPlayer(project) {
   }
 
   const allowedProjects = ["in my mind", "la reflection perdue", "metamorphose"];
-  const projectKey = (project?.id || "").trim().toLowerCase();
+  const projectKey = (project?.id || "")
+    .trim()
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
   const videoUrl = project?.videoLink || project?.link || "";
   const embedUrl = getYouTubeEmbedUrl(videoUrl);
   const shouldOpenInlineVideo = allowedProjects.includes(projectKey) && Boolean(embedUrl);
